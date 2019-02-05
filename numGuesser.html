@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>guess.html</title>
+	<style type = "text/css">
+	fieldset {
+		width: 600px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	label {
+		float: left;
+		width: 250px;
+		text-align: right;
+		padding-right: 1em;
+		clear: left;
+	}
+	button {
+		display: block;
+		clear: both;
+		margin:auto;
+	}h1{
+		text-align: center;
+	}#output {
+		text-align: center;
+	}
+	</style>
+	<script src="numGuess.js"></script>
+</head>
+<body onload="tryAgain()">
+	<h1>Number Guesser</h1>
+	<form>
+		<fieldset>
+			<div id="output">I'm thingking of a number between 0 and 100. Guess my number, and I'll tell if you are too high, too low ,or correct.</div>
+			<label>Your Guess</label>
+			<input type="text" id="txtGuess" value="">
+			<br><br>
+			<button type = "button" onclick = "checkGuess()">check your guess</button>
+			<button id=btnAgain type = "button" onclick = "tryAgain()">Try again</button>
+		</fieldset>
+	</form>
+</body>
+</html>
